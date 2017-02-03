@@ -1,0 +1,18 @@
+name: bower
+version: '1.8.0'
+summary: A package manager for the web
+description: |
+  Web sites are made of lots of things — frameworks, libraries, assets, and utilities.
+  Bower manages all these things for you.
+grade: stable
+confinement: classic
+
+apps:
+  bower:
+    command: bower
+
+parts:
+  bower:
+    plugin: nodejs
+    node-packages:
+      - bower@1.8.0
